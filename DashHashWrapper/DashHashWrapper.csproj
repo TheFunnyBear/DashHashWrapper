@@ -49,6 +49,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DashHash\DashHash.vcxproj">
+      <Project>{d1b19e4c-8795-48ae-a239-e57e348a534f}</Project>
+      <Name>DashHash</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>xcopy "$(SolutionDir)Debug\DashHash.dll" "$(ProjectDir)bin\Debug" /Y /I</PreBuildEvent>
